@@ -2,6 +2,7 @@
 Отчет по лабораторной работе #1 выполнил(а):
 - Христолюбов Данил Александрович
 - РИ-230932
+
 Отметка о выполнении заданий (заполняется студентом):
 
 | Задание | Выполнение | Баллы |
@@ -39,7 +40,7 @@
 ## Задание 1
 ### 1 Начало работы с Python
 Ход работы:
-![JupyterNotebook]((https://github.com/splitxd/bigDigital/blob/main/Jupyter.png))
+![JupyterNotebook](https://github.com/splitxd/bigDigital/blob/main/Jupyter.png)
 
 
 ## Задание 2
