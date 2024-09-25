@@ -31,9 +31,8 @@
 - Задание 2.
 - Скриншот выполненного задания с Unity.
 - Задание 3.
-- Код реализации выполнения задания. Визуализация результатов выполнения (если применимо).
+- Предложение для обучения ML-Agent-ом.
 - Выводы.
-- ✨Magic ✨
 
 ## Цель работы
 установить необходимое программное обеспечение, которое пригодится для создания интеллектуальных моделей на Python. Рассмотреть процесс установки игрового движка Unity для разработки игр.
@@ -44,64 +43,23 @@
 
 
 ## Задание 2
-### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+### Начало работы с Unity
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
-
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
+![Image alt](https://github.com/splitxd/bigDigital/blob/main/Unity.png)
 
 ## Задание 3
-### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
+### Какую сущность(и) мы бы могли «обучить» ML-Agent-ом для того чтобы создать более качественный игровой опыт?
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
-
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
+Предложение для обучения ML-Agent-ом: Можно добавить персонажу способности.
+Условно, будет древо прокачки таких умений, а очки для их прокачки будут получаться при убийстве боссов.
+Будут несколько веток, по типу "Здоровье", "Оружие", "Способности", и например в способностях остановка времени, в оружии 
+пополнение патрон со временем, в здоровье мгновенная регенерация.
+У каждой способности будет свой уникальный CoolDown, который зависит от влияния игры, именно эту особеность, а так же 
+влияние на игровой процесс будет изменяться ML-Agent-ом.
 
 ## Выводы
 
-Абзац умных слов о том, что было сделано и что было узнано.
+Были установлены необходимые программы и прорешаны задания, научился пользоваться Git-hub-ом и изучил игру, для которой необходим ML-Agent
 
 | Plugin | README |
 | ------ | ------ |
