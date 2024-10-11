@@ -42,19 +42,45 @@
 ## Задание 0
 ### Изменения google-таблицы при помощи python и воспроизведение изменений в Unity.
 Ход работы:
+
 ![GoogleAPI](https://github.com/splitxd/bigDigital/blob/main/HW2/GoogleAPI.png)
+
 ![GoogleTab](https://github.com/splitxd/bigDigital/blob/main/HW2/GoogleTab.png)
+
 ![JupNoteB](https://github.com/splitxd/bigDigital/blob/main/HW2/py.png)
+
 ![gspread](https://github.com/splitxd/bigDigital/blob/main/HW2/gspread.png)
+
 ![script](https://github.com/splitxd/bigDigital/blob/main/HW2/script.png)
+
 ![Unity](https://github.com/splitxd/bigDigital/blob/main/HW2/Unity.png)
+
 ![Component](https://github.com/splitxd/bigDigital/blob/main/HW2/Component.png)
 
 
 ## Задание 1
 ### Описание игровой переменная "здоровья"
 
-![Image alt](https://github.com/splitxd/bigDigital/blob/main/Unity.png)
+![HP](https://github.com/splitxd/bigDigital/blob/main/HW2/HP.png)
+
+# Здоровье
+Здоровье является важнейшей частью игры и представляет собой ресурс продолжительности выживаемости, условно "сколько раз тебя
+может ударить зомби, прежде чем ты начнешь новую игру". Ресурс пополняемый и может увеличиваться при прокачке. 
+Для увеличения ограничения ресурса необходимо в навыках прокачивать "+ Здоровье", на сколько я понял прокачка не ограничена
+ количеством, просто в какой то момент будет стоить дорого очков навыков
+ 
+![Health](https://github.com/splitxd/bigDigital/blob/main/HW2/Health.png)
+
+Для пополнения используются два навыка и один предмет из магазина, который восстанавливает здоровье при полной его утрате, возраждая персонажа.
+Как я понимаю эти способности тоже не имеют ограничений в покупке, как и количество воскрешений.
+
+![Wamp](https://github.com/splitxd/bigDigital/blob/main/HW2/Wamp.png)
+
+![PassiveHR](https://github.com/splitxd/bigDigital/blob/main/HW2/PassiveHR.png)
+
+Схема экономической модели:
+
+![Econom](https://github.com/splitxd/bigDigital/blob/main/HW2/Economics.png)
 
 ## Задание 2
 ###  Реализации скрипта заполнения таблицы Python и описание реализации изменения здоровья.
