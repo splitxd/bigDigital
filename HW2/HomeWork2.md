@@ -110,124 +110,126 @@
 Я написал скрипт, который в зависимости от полного здоровья(100), смерти (0), при получении урона и при исцелении будет воспроизводить различные звуки в Unity, а данные будут браться из гугл-таблицы.
 
 Code:
-'''
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Networking;
-using SimpleJSON;
+'''csharp
 
-public class scriptHW : MonoBehaviour
-{
-    public AudioClip getHealth;
-    public AudioClip fullHealth;
-    public AudioClip zeroHealth;
-    public AudioClip wasteHealth;
-
-    private AudioSource selectAudio;
-    private Dictionary<string, List<float>> dataSet = new Dictionary<string, List<float>>();
-    private bool statusStart = false;
-    private int i = 1;
-
-    void Start()
-    {
-        StartCoroutine(GoogleSheets());
-    }
-
-    void Print(float a, float b)
-    {
-        Debug.Log("Изменение: " + a.ToString() + " HP: " + b.ToString());
-    }
-
-    void Update()
-    {
-        if (i <= dataSet.Count)
+     using System.Collections;
+     using System.Collections.Generic;
+     using UnityEngine;
+     using UnityEngine.Networking;
+     using SimpleJSON;
+     
+     public class scriptHW : MonoBehaviour
+     {
+     
+        public AudioClip getHealth;
+        public AudioClip fullHealth;
+        public AudioClip zeroHealth;
+        public AudioClip wasteHealth;
+        
+        private AudioSource selectAudio;
+        private Dictionary<string, List<float>> dataSet = new Dictionary<string, List<float>>();
+        private bool statusStart = false;
+        private int i = 1;
+     
+        void Start()
         {
-            if (dataSet[i.ToString()][1] < 100 && dataSet[i.ToString()][1] > 0 && dataSet[i.ToString()][0] >= 0 && statusStart == false)
+            StartCoroutine(GoogleSheets());
+        }
+     
+        void Print(float a, float b)
+        {
+            Debug.Log("Изменение: " + a.ToString() + " HP: " + b.ToString());
+        }
+     
+        void Update()
+        {
+            if (i <= dataSet.Count)
             {
-                StartCoroutine(PlaySelectAudioGet());
-                Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
-            }
-
-            if (dataSet[i.ToString()][1] == 100 && dataSet[i.ToString()][0] >= 0 && statusStart == false)
-            {
-                StartCoroutine(PlaySelectAudioFull());
-                Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
-            }
-
-            if (dataSet[i.ToString()][1] == 0 && statusStart == false)
-            {
-                StartCoroutine(PlaySelectAudioZero());
-                Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
-            }
-
-            if (dataSet[i.ToString()][1] >= 0 && dataSet[i.ToString()][0] < 0 && statusStart == false)
-            {
-                StartCoroutine(PlaySelectAudioWaste());
-                Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
+                if (dataSet[i.ToString()][1] < 100 && dataSet[i.ToString()][1] > 0 && dataSet[i.ToString()][0] >= 0 && statusStart == false)
+                {
+                    StartCoroutine(PlaySelectAudioGet());
+                    Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
+                }
+     
+                if (dataSet[i.ToString()][1] == 100 && dataSet[i.ToString()][0] >= 0 && statusStart == false)
+                {
+                    StartCoroutine(PlaySelectAudioFull());
+                    Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
+                }
+     
+                if (dataSet[i.ToString()][1] == 0 && statusStart == false)
+                {
+                    StartCoroutine(PlaySelectAudioZero());
+                    Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
+                }
+     
+                if (dataSet[i.ToString()][1] >= 0 && dataSet[i.ToString()][0] < 0 && statusStart == false)
+                {
+                    StartCoroutine(PlaySelectAudioWaste());
+                    Print(dataSet[i.ToString()][0], dataSet[i.ToString()][1]);
+                }
             }
         }
-    }
-
-    IEnumerator GoogleSheets()
-    {
-        UnityWebRequest curentResp = UnityWebRequest.Get("https://sheets.googleapis.com/v4/spreadsheets/1Df3vDa83goSeOlv1OV9K-HfapAIHB_KnhdVyIQqaMRg/values/Лист1?key=AIzaSyBNKXlLNi7ZuoB85CdanQEpK3tDGlwrtYQ");
-        yield return curentResp.SendWebRequest();
-        string rawResp = curentResp.downloadHandler.text;
-        var rawJson = JSON.Parse(rawResp);
-
-        foreach (var itemRawJson in rawJson["values"])
+     
+        IEnumerator GoogleSheets()
         {
-            var parseJson = JSON.Parse(itemRawJson.ToString());
-            var selectRow = parseJson[0].AsStringList;
-            dataSet.Add(selectRow[0], new List<float> { float.Parse(selectRow[1]), float.Parse(selectRow[2]) });
+            UnityWebRequest curentResp = UnityWebRequest.Get("https://sheets.googleapis.com/v4/spreadsheets/1Df3vDa83goSeOlv1OV9K-HfapAIHB_KnhdVyIQqaMRg/values/Лист1?key=AIzaSyBNKXlLNi7ZuoB85CdanQEpK3tDGlwrtYQ");
+            yield return curentResp.SendWebRequest();
+            string rawResp = curentResp.downloadHandler.text;
+            var rawJson = JSON.Parse(rawResp);
+     
+            foreach (var itemRawJson in rawJson["values"])
+            {
+                var parseJson = JSON.Parse(itemRawJson.ToString());
+                var selectRow = parseJson[0].AsStringList;
+                dataSet.Add(selectRow[0], new List<float> { float.Parse(selectRow[1]), float.Parse(selectRow[2]) });
+            }
         }
-    }
-
-    IEnumerator PlaySelectAudioGet()
-    {
-        statusStart = true;
-        selectAudio = GetComponent<AudioSource>();
-        selectAudio.clip = getHealth;
-        selectAudio.Play();
-        yield return new WaitForSeconds(3);
-        statusStart = false;
-        i++;
-    }
-
-    IEnumerator PlaySelectAudioFull()
-    {
-        statusStart = true;
-        selectAudio = GetComponent<AudioSource>();
-        selectAudio.clip = fullHealth;
-        selectAudio.Play();
-        yield return new WaitForSeconds(3);
-        statusStart = false;
-        i++;
-    }
-
-    IEnumerator PlaySelectAudioZero()
-    {
-        statusStart = true;
-        selectAudio = GetComponent<AudioSource>();
-        selectAudio.clip = zeroHealth;
-        selectAudio.Play();
-        yield return new WaitForSeconds(4);
-        statusStart = false;
-        i++;
-    }
-
-    IEnumerator PlaySelectAudioWaste()
-    {
-        statusStart = true;
-        selectAudio = GetComponent<AudioSource>();
-        selectAudio.clip = wasteHealth;
-        selectAudio.Play();
-        yield return new WaitForSeconds(4);
-        statusStart = false;
-        i++;
-    }
-}
+     
+        IEnumerator PlaySelectAudioGet()
+        {
+            statusStart = true;
+            selectAudio = GetComponent<AudioSource>();
+            selectAudio.clip = getHealth;
+            selectAudio.Play();
+            yield return new WaitForSeconds(3);
+            statusStart = false;
+            i++;
+        }
+     
+        IEnumerator PlaySelectAudioFull()
+        {
+            statusStart = true;
+            selectAudio = GetComponent<AudioSource>();
+            selectAudio.clip = fullHealth;
+            selectAudio.Play();
+            yield return new WaitForSeconds(3);
+            statusStart = false;
+            i++;
+        }
+     
+        IEnumerator PlaySelectAudioZero()
+        {
+            statusStart = true;
+            selectAudio = GetComponent<AudioSource>();
+            selectAudio.clip = zeroHealth;
+            selectAudio.Play();
+            yield return new WaitForSeconds(4);
+            statusStart = false;
+            i++;
+        }
+     
+        IEnumerator PlaySelectAudioWaste()
+        {
+            statusStart = true;
+            selectAudio = GetComponent<AudioSource>();
+            selectAudio.clip = wasteHealth;
+            selectAudio.Play();
+            yield return new WaitForSeconds(4);
+            statusStart = false;
+            i++;
+        }
+     }
 
 '''
 ![code1](https://github.com/splitxd/bigDigital/blob/main/HW2/code1.png)
