@@ -71,7 +71,7 @@
 ## Задание 2
 ###  Построить графики зависимости количества эпох от ошибки  обучения 
 
-Ссылка на Google tabs: [https://docs.google.com/spreadsheets/d/1kbM_nu7W_YPP1ITvdtGqjT1RNt-BHocHr7JBATfzEHc/edit?usp=sharing][GoogleTabsParceptron]
+Ссылка на Google tabs: [GoogleTabsParceptron](https://docs.google.com/spreadsheets/d/1kbM_nu7W_YPP1ITvdtGqjT1RNt-BHocHr7JBATfzEHc/edit?usp=sharing)
 
 ####OR Graph
 ![ORG](https://github.com/splitxd/bigDigital/blob/main/HW4/ORG.png)
