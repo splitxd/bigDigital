@@ -100,6 +100,80 @@ XOR не имеет, поэтому стандартная модель парц
 ## Задание 3
 ### Построить визуальную модель работы перцептрона на сцене Unity
 
+Я сделал что при создании кубиков нужно указать один из материалов 
+красный или зеленый, которые соответственно равны "0" и "1". Далее они движутся 
+друг к другу и при встрече, в соответствии с созданным массивом для условия (AND,OR,NAND и тд)
+и значением выходного они создают один из префабов красного или зеленого кубика, которые означают
+"0" или "1" соответсвенно работы функции. Для проверки вывода можно менять материалы созданных 
+на сцене CubeFirst CubeSecond и массив для условий чтобы проверить работоспособность функции.
+
+```csharp
+
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+[System.Serializable]
+public class TrainingSets
+{
+	public double[] input;
+	public double output;
+}
+[System.Serializable]
+public class Prefabs
+{
+    public string name;
+	public GameObject positive;
+    public GameObject negative;
+}
+
+
+public class OnTrigger : MonoBehaviour
+{
+    public TrainingSet[] ts;
+    public Prefabs prefs;
+    public GameObject textGO;
+
+    void Start()
+    {
+        var text = textGO.GetComponent<TextMeshProUGUI>();
+        text.text = prefs.name;
+    }
+
+    void Update()
+    {
+        
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        Vector3 posToSpawn = new Vector3(-0.308f,1.324f,0.9f);
+        Renderer rendererThis = GetComponent<Renderer>();
+        Renderer rendererOther = other.GetComponent<Renderer>();
+        string materialNameThis = rendererThis.material.name.ToLower();
+        string materialNameOther = rendererOther.material.name.ToLower();
+        double secValue = materialNameOther.Contains("green") ? 1 : materialNameOther.Contains("red") ? 0 : -1;
+        double firstValue = materialNameThis.Contains("green") ? 1 : materialNameThis.Contains("red") ? 0 : -1;
+
+        foreach (var set in ts)
+        {
+            if (set.input[0] == firstValue && set.input[1] == secValue)
+            {
+                if (set.output == 1)
+                {
+                    Instantiate(prefs.positive, posToSpawn, Quaternion.identity);
+                }
+                else if (set.output == 0)
+                {
+                    Instantiate(prefs.negative, posToSpawn, Quaternion.identity);
+                }
+                Destroy(other.gameObject);
+                Destroy(gameObject);
+            }
+        }  
+    }
+}
+```
 
 
 
