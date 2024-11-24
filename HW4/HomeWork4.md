@@ -71,8 +71,19 @@
 ## Задание 2
 ###  Построить графики зависимости количества эпох от ошибки  обучения 
 
+Ссылка на Google tabs: [https://docs.google.com/spreadsheets/d/1kbM_nu7W_YPP1ITvdtGqjT1RNt-BHocHr7JBATfzEHc/edit?usp=sharing][GoogleTabsParceptron]
 
+####OR Graph
+![ORG](https://github.com/splitxd/bigDigital/blob/main/HW4/ORG.png)
 
+####AND Graph
+![ANDG](https://github.com/splitxd/bigDigital/blob/main/HW4/ANDG.png)
+
+####NAND Graph
+![NANDG](https://github.com/splitxd/bigDigital/blob/main/HW4/NANDG.png)
+
+####XOR Graph
+![XORG](https://github.com/splitxd/bigDigital/blob/main/HW4/XORG.png)
 
 ## Задание 3
 ### Построить визуальную модель работы перцептрона на сцене Unity
