@@ -53,19 +53,19 @@
 #### AND
 Для AND понадобилось в среднем 6 поколения для устранения ошибок.
 
-[AND](https://github.com/splitxd/bigDigital/blob/main/HW4/OR.png)
+![AND](https://github.com/splitxd/bigDigital/blob/main/HW4/OR.png)
 
 
 #### NAND
 Для NAND понадобилось в среднем 6 поколения для устранения ошибок.
 
-[NAND](https://github.com/splitxd/bigDigital/blob/main/HW4/NAND.png)
+![NAND](https://github.com/splitxd/bigDigital/blob/main/HW4/NAND.png)
 
 
 #### XOR
 Для XOR количество покелений может превышать и 100, но количество total error не будет уменьшатся с 4
 
-[XOR](https://github.com/splitxd/bigDigital/blob/main/HW4/XOR.png)
+![XOR](https://github.com/splitxd/bigDigital/blob/main/HW4/XOR.png)
 
 
 ## Задание 2
@@ -74,15 +74,19 @@
 Ссылка на Google tabs: [GoogleTabsParceptron](https://docs.google.com/spreadsheets/d/1kbM_nu7W_YPP1ITvdtGqjT1RNt-BHocHr7JBATfzEHc/edit?usp=sharing)
 
 ####OR Graph
+
 ![ORG](https://github.com/splitxd/bigDigital/blob/main/HW4/ORG.png)
 
 ####AND Graph
+
 ![ANDG](https://github.com/splitxd/bigDigital/blob/main/HW4/ANDG.png)
 
 ####NAND Graph
+
 ![NANDG](https://github.com/splitxd/bigDigital/blob/main/HW4/NANDG.png)
 
 ####XOR Graph
+
 ![XORG](https://github.com/splitxd/bigDigital/blob/main/HW4/XORG.png)
 
 ## Задание 3
