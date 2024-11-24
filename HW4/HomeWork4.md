@@ -107,6 +107,11 @@ XOR не имеет, поэтому стандартная модель парц
 "0" или "1" соответсвенно работы функции. Для проверки вывода можно менять материалы созданных 
 на сцене CubeFirst CubeSecond и массив для условий чтобы проверить работоспособность функции.
 
+![SC1](https://github.com/splitxd/bigDigital/blob/main/HW4/sc1.png)
+![SC2](https://github.com/splitxd/bigDigital/blob/main/HW4/sc2.png)
+![SC3](https://github.com/splitxd/bigDigital/blob/main/HW4/sc3.png)
+![SC4](https://github.com/splitxd/bigDigital/blob/main/HW4/sc4.png)
+
 ```csharp
 
 using System.Collections;
