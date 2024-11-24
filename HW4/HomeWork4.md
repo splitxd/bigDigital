@@ -53,19 +53,19 @@
 #### AND
 Для AND понадобилось в среднем 6 поколения для устранения ошибок.
 
-![AND](https://github.com/splitxd/bigDigital/blob/main/HW4/OR.png)
+[AND](https://github.com/splitxd/bigDigital/blob/main/HW4/OR.png)
 
 
 #### NAND
 Для NAND понадобилось в среднем 6 поколения для устранения ошибок.
 
-![NAND](https://github.com/splitxd/bigDigital/blob/main/HW4/NAND.png)
+[NAND](https://github.com/splitxd/bigDigital/blob/main/HW4/NAND.png)
 
 
 #### XOR
 Для XOR количество покелений может превышать и 100, но количество total error не будет уменьшатся с 4
 
-![XOR](https://github.com/splitxd/bigDigital/blob/main/HW4/XOR.png)
+[XOR](https://github.com/splitxd/bigDigital/blob/main/HW4/XOR.png)
 
 
 ## Задание 2
