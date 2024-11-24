@@ -73,19 +73,19 @@
 
 Ссылка на Google tabs: [GoogleTabsParceptron](https://docs.google.com/spreadsheets/d/1kbM_nu7W_YPP1ITvdtGqjT1RNt-BHocHr7JBATfzEHc/edit?usp=sharing)
 
-####OR Graph
+#### OR Graph
 
 ![ORG](https://github.com/splitxd/bigDigital/blob/main/HW4/ORG.png)
 
-####AND Graph
+#### AND Graph
 
 ![ANDG](https://github.com/splitxd/bigDigital/blob/main/HW4/ANDG.png)
 
-####NAND Graph
+#### NAND Graph
 
 ![NANDG](https://github.com/splitxd/bigDigital/blob/main/HW4/NANDG.png)
 
-####XOR Graph
+#### XOR Graph
 
 ![XORG](https://github.com/splitxd/bigDigital/blob/main/HW4/XORG.png)
 
