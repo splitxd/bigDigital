@@ -42,12 +42,21 @@
 ## Задание 0
 ### Ход работы
 
+####Часть 1
 ![succes](https://github.com/splitxd/bigDigital/blob/main/HW5/succes.png)
 ![2models](https://github.com/splitxd/bigDigital/blob/main/HW5/2models.png)
 ![9models](https://github.com/splitxd/bigDigital/blob/main/HW5/9models.png)
 ![27models](https://github.com/splitxd/bigDigital/blob/main/HW5/27models.png)
 ![learning](https://github.com/splitxd/bigDigital/blob/main/HW5/Learning.png)
 ![Model](https://github.com/splitxd/bigDigital/blob/main/HW5/Model.png)
+
+
+####Часть 2
+![miner](https://github.com/splitxd/bigDigital/blob/main/HW5/1miner.png)
+![miners](https://github.com/splitxd/bigDigital/blob/main/HW5/moreminers.png)
+![intime](https://github.com/splitxd/bigDigital/blob/main/HW5/intime.png)
+![results](https://github.com/splitxd/bigDigital/blob/main/HW5/results.png)
+![board](https://github.com/splitxd/bigDigital/blob/main/HW5/board.png)
 
 ## Задание 1
 ### “коэффициент корреляции ”
