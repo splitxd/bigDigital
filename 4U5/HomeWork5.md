@@ -43,26 +43,26 @@
 ### Ход работы
 
 #### Часть 1
-![packeges](https://github.com/splitxd/bigDigital/blob/main/4U5/packeges.png)
-![start](https://github.com/splitxd/bigDigital/blob/main/4U5/start.png)
-![multi](https://github.com/splitxd/bigDigital/blob/main/4U5/multi.png)
-![script](https://github.com/splitxd/bigDigital/blob/main/4U5/script.png)
-![resultroller](https://github.com/splitxd/bigDigital/blob/main/4U5/resultroller.png)
-![withlearn](https://github.com/splitxd/bigDigital/blob/main/4U5/withlearn.png)
+![packeges](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /packeges.png)
+![start](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /start.png)
+![multi](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /multi.png)
+![script](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /script.png)
+![resultroller](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /resultroller.png)
+![withlearn](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /withlearn.png)
 _____________________________________________________________________________________________
 
 #### Часть 2
-![starteco](https://github.com/splitxd/bigDigital/blob/main/4U5/starteco.png)
-![miners](https://github.com/splitxd/bigDigital/blob/main/4U5/economics.png)
-![resulteco](https://github.com/splitxd/bigDigital/blob/main/4U5/resulteco.png)
-![graphs](https://github.com/splitxd/bigDigital/blob/main/4U5/graphs.png)
+![starteco](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /starteco.png)
+![miners](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /economics.png)
+![resulteco](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /resulteco.png)
+![graphs](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /graphs.png)
 
 ## Задание 1
 ### Найдите внутри C# скрипта “коэффициент корреляции”
 В этом случае коэффициент корреляции это tempInf.
 tempInf — это процентное изменение цены между двумя месяцами
 
-![corr](https://github.com/splitxd/bigDigital/blob/main/4U5/corr.png)
+![corr](https://github.com/ ТВОЙ РЕПОЗИТОРИЙ /corr.png)
 
 #### Влияние на обучение:
 1.Если tempInf низкий (≤6):
