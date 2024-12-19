@@ -43,12 +43,12 @@
 ### Ход работы
 
 #### Часть 1
-![packages](https://github.com/splitxd/bigDigital/blob/main/HW5/packages.png)
-![start](https://github.com/splitxd/bigDigital/blob/main/HW5/start.png)
-![multi](https://github.com/splitxd/bigDigital/blob/main/HW5/multi.png)
-![script](https://github.com/splitxd/bigDigital/blob/main/HW5/script.png)
-![resultroller](https://github.com/splitxd/bigDigital/blob/main/HW5/resultroller.png)
-![withlearn](https://github.com/splitxd/bigDigital/blob/main/HW5/withlearn.png)
+![packages](https://github.com/splitxd/bigDigital/blob/main/4U5/packages.png)
+![start](https://github.com/splitxd/bigDigital/blob/main/4U5/start.png)
+![multi](https://github.com/splitxd/bigDigital/blob/main/4U5/multi.png)
+![script](https://github.com/splitxd/bigDigital/blob/main/4U5/script.png)
+![resultroller](https://github.com/splitxd/bigDigital/blob/main/4U5/resultroller.png)
+![withlearn](https://github.com/splitxd/bigDigital/blob/main/4U5/withlearn.png)
 _____________________________________________________________________________________________
 
 #### Часть 2
