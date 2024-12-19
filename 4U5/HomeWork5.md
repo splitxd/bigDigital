@@ -1,7 +1,7 @@
 # АНАЛИЗ ДАННЫХ В РАЗРАБОТКЕ ИГР [in GameDev]
-Отчет по лабораторной работе #5 выполнил(а):
-- Христолюбов Данил Александрович
-- РИ-230932
+Отчет по лабораторной работе #5 выполнила:
+- Коробейникова Анастасия Денисовна
+- НМТ-231805
 
 Отметка о выполнении заданий (заполняется студентом):
 
@@ -43,20 +43,19 @@
 ### Ход работы
 
 #### Часть 1
-![succes](https://github.com/splitxd/bigDigital/blob/main/HW5/succes.png)
-![2models](https://github.com/splitxd/bigDigital/blob/main/HW5/2models.png)
-![9models](https://github.com/splitxd/bigDigital/blob/main/HW5/9models.png)
-![27models](https://github.com/splitxd/bigDigital/blob/main/HW5/27models.png)
-![learning](https://github.com/splitxd/bigDigital/blob/main/HW5/Learning.png)
-![Model](https://github.com/splitxd/bigDigital/blob/main/HW5/Model.png)
+![packages](https://github.com/splitxd/bigDigital/blob/main/HW5/packages.png)
+![start](https://github.com/splitxd/bigDigital/blob/main/HW5/start.png)
+![multi](https://github.com/splitxd/bigDigital/blob/main/HW5/multi.png)
+![script](https://github.com/splitxd/bigDigital/blob/main/HW5/script.png)
+![resultroller](https://github.com/splitxd/bigDigital/blob/main/HW5/resultroller.png)
+![withlearn](https://github.com/splitxd/bigDigital/blob/main/HW5/withlearn.png)
 _____________________________________________________________________________________________
 
 #### Часть 2
-![miner](https://github.com/splitxd/bigDigital/blob/main/HW5/1miner.png)
-![miners](https://github.com/splitxd/bigDigital/blob/main/HW5/moreminers.png)
-![intime](https://github.com/splitxd/bigDigital/blob/main/HW5/intime.png)
-![results](https://github.com/splitxd/bigDigital/blob/main/HW5/results.png)
-![board](https://github.com/splitxd/bigDigital/blob/main/HW5/board.png)
+![starteco](https://github.com/splitxd/bigDigital/blob/main/HW5/starteco.png)
+![miners](https://github.com/splitxd/bigDigital/blob/main/HW5/economics.png)
+![resulteco](https://github.com/splitxd/bigDigital/blob/main/HW5/resulteco.png)
+![graphs](https://github.com/splitxd/bigDigital/blob/main/HW5/graphs.png)
 
 ## Задание 1
 ### “коэффициент корреляции ”
