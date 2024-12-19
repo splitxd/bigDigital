@@ -52,19 +52,29 @@
 _____________________________________________________________________________________________
 
 #### Часть 2
-![starteco](https://github.com/splitxd/bigDigital/blob/main/HW5/starteco.png)
-![miners](https://github.com/splitxd/bigDigital/blob/main/HW5/economics.png)
-![resulteco](https://github.com/splitxd/bigDigital/blob/main/HW5/resulteco.png)
-![graphs](https://github.com/splitxd/bigDigital/blob/main/HW5/graphs.png)
+![starteco](https://github.com/splitxd/bigDigital/blob/main/4U5/starteco.png)
+![miners](https://github.com/splitxd/bigDigital/blob/main/4U5/economics.png)
+![resulteco](https://github.com/splitxd/bigDigital/blob/main/4U5/resulteco.png)
+![graphs](https://github.com/splitxd/bigDigital/blob/main/4U5/graphs.png)
 
 ## Задание 1
 ### “коэффициент корреляции ”
+В этом случае коэффициент корреляции это tempInf.
+tempInf — это процентное изменение цены между двумя месяцами
+![corr](https://github.com/splitxd/bigDigital/blob/main/4U5/corr.png)
 
-В этом случае, я подозреваю, коэффициент корреляции это перемення "tempInf", которая определяет 
-награду для ML агента. Она при получении инфляции менее 6 процентов награждает его, а за
-инфляцию больше 6 процентов "наказывает" его. Влияние следующее: если увеличить максимальный процент,
-то обучение будет менее качественным, но будет происходить быстрее, а уменьшение приведет к
-обратному эффекту. Если же будет 0 процентов - это не достижимый результат.
+#### Влияние на обучение:
+1.Если tempInf низкий (≤6):
+
+-Агент получает положительную награду, что стимулирует повторять текущую стратегию.
+Это закрепляет успешные действия, например, оптимальные значения speedMove, timeMining, 
+amountGold, pickaxeCost, и profitPercentage.
+-Способствует быстрому завершению эпизодов и эффективному обучению.
+
+2.Если tempInf высокий (>6):
+
+-Агент получает штраф, что заставляет его искать новые стратегии, чтобы улучшить результат.
+-Модель адаптируется и пытается минимизировать нестабильность цен между месяцами.
 
 ## Задание 2
 ###  Параметры файла yaml-агента
