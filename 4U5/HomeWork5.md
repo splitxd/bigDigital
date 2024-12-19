@@ -43,7 +43,7 @@
 ### Ход работы
 
 #### Часть 1
-![packages](https://github.com/splitxd/bigDigital/blob/main/4U5/packages.png)
+![packeges](https://github.com/splitxd/bigDigital/blob/main/4U5/packeges.png)
 ![start](https://github.com/splitxd/bigDigital/blob/main/4U5/start.png)
 ![multi](https://github.com/splitxd/bigDigital/blob/main/4U5/multi.png)
 ![script](https://github.com/splitxd/bigDigital/blob/main/4U5/script.png)
